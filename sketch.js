@@ -57,18 +57,18 @@ function setup() {
     img[i].resize(TILES_X, TILES_Y);
   }
 
-  if (windowWidth < 400) {
+  if (windowWidth < 700) {
     wh = 200;
+    textSize(10);
   } else {
     wh = 400;
+    textSize(40);
   }
 
   TILE_W = wh / TILES_X;
   TILE_H = wh / TILES_Y;
 
   counter = int(random(0, 28));
-
-  textSize(10);
 }
 
 function draw() {
