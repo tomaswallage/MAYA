@@ -68,7 +68,7 @@ function setup() {
 
   counter = int(random(0, 28));
 
-  textSize(25);
+  textSize(10);
 }
 
 function draw() {
