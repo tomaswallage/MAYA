@@ -6,7 +6,7 @@ let pg;
 let TILES_X = 45;
 let TILES_Y = 45;
 
-let wh = 400;
+let wh;
 
 let TILE_W, TILE_H;
 
@@ -55,6 +55,12 @@ function setup() {
 
   for (let i = 0; i < imgAmount; i++) {
     img[i].resize(TILES_X, TILES_Y);
+  }
+
+  if (windowWidth < 400) {
+    wh = 200;
+  } else {
+    wh = 400;
   }
 
   TILE_W = wh / TILES_X;
