@@ -80,7 +80,7 @@ function draw() {
   pg.image(img[counter], 0, 0);
   pg.pop();
 
-  if (frameCount % 300 == 0) {
+  if (frameCount % 400 == 0) {
     counter = int(random(0, 28));
   }
   // if (counter > 27) {
@@ -89,7 +89,7 @@ function draw() {
 
   textAlign(CENTER, CENTER);
   fill(100, 180, 20);
-  text(dates[counter], width / 2, height / 2 + 250);
+  text(dates[counter], width / 2, height / 2 + wh / 2 + 30);
   console.log(dates[counter]);
 
   translate(width / 2 - wh / 2, height / 2 - wh / 2);
