@@ -58,11 +58,11 @@ function setup() {
   }
 
   if (windowWidth < 700) {
-    wh = 250;
+    wh = 200;
     textSize(10);
   } else {
-    wh = 450;
-    textSize(25);
+    wh = 400;
+    textSize(40);
   }
 
   TILE_W = wh / TILES_X;
@@ -89,10 +89,10 @@ function draw() {
 
   textAlign(CENTER, CENTER);
   fill(100, 180, 20);
-  text(dates[counter], windowWidth / 2, windowHeight / 2 + wh / 2 + 30);
+  text(dates[counter], width / 2, height / 2 + wh / 2 + 30);
   console.log(dates[counter]);
 
-  translate(windowWidth / 2 - wh / 2, windowHeight / 2 - wh / 2);
+  translate(width / 2 - wh / 2, height / 2 - wh / 2);
   translate(TILE_W / 2, TILE_H / 2);
 
   for (let x = 0; x < TILES_X; x++) {
