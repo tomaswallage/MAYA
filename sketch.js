@@ -1,4 +1,4 @@
-let imgAmount = 38;
+let imgAmount = 28;
 let img = [];
 
 let pg;
@@ -7,7 +7,6 @@ let TILES_X = 45;
 let TILES_Y = 45;
 
 let wh;
-let gap;
 
 let TILE_W, TILE_H;
 
@@ -42,16 +41,6 @@ let dates = [
   "12th September 2024",
   "13th February 2025",
   "15th March 2025",
-  "15th May 2025",
-  "16th May 2025",
-  "7th September 2023",
-  "28th October 2023",
-  "18th November 2023",
-  "30th December 2024",
-  "5th October 2024",
-  "5th October 2024",
-  "31st December 2024",
-  "5th April 2025",
 ];
 
 function preload() {
@@ -70,11 +59,9 @@ function setup() {
 
   if (windowWidth < 700) {
     wh = 250;
-    gap = 30;
     textSize(10);
   } else {
     wh = 450;
-    gap = 60;
     textSize(25);
   }
 
@@ -102,7 +89,7 @@ function draw() {
 
   textAlign(CENTER, CENTER);
   fill(100, 180, 20);
-  text(dates[counter], windowWidth / 2, windowHeight / 2 + wh / 2 + gap);
+  text(dates[counter], windowWidth / 2, windowHeight / 2 + wh / 2 + 30);
   console.log(dates[counter]);
 
   translate(windowWidth / 2 - wh / 2, windowHeight / 2 - wh / 2);
