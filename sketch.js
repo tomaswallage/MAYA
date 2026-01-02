@@ -61,7 +61,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowWidth);
+  createCanvas(windowWidth, windowHeight);
   pg = createGraphics(TILES_X, TILES_Y);
 
   for (let i = 0; i < imgAmount; i++) {
