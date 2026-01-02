@@ -102,7 +102,7 @@ function draw() {
 
   textAlign(CENTER, CENTER);
   fill(100, 180, 20);
-  text(dates[counter], windowWidth / 2, windowHeight / 2 + wh / 2 + gap);
+  text(dates[counter], windowWidth / 2, windowHeight / 2 + wh / 2 + 30);
   console.log(dates[counter]);
 
   translate(windowWidth / 2 - wh / 2, windowHeight / 2 - wh / 2);
