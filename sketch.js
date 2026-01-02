@@ -81,7 +81,7 @@ function setup() {
   TILE_W = wh / TILES_X;
   TILE_H = wh / TILES_Y;
 
-  counter = int(random(0, 28));
+  counter = int(random(0, imgAmount));
 }
 
 function draw() {
