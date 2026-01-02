@@ -3,8 +3,8 @@ let img = [];
 
 let pg;
 
-let TILES_X = 45;
-let TILES_Y = 45;
+let TILES_X = 50;
+let TILES_Y = TILES_X;
 
 let wh;
 let gap;
