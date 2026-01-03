@@ -106,7 +106,7 @@ function draw() {
   console.log(dates[counter]);
 
   text(
-    "A space for our favourite memories \nin the amazing years together we have had, \nwith room for all the exciting memories in \nyears to come :)",
+    "A space for our favourite memories over \nthe amazing years together we have had together, \nwith room for all the exciting memories in \nyears to come :)",
     windowWidth / 2,
     windowHeight + 50
   );
