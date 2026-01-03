@@ -61,7 +61,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth, windowHeight + 250);
   pg = createGraphics(TILES_X, TILES_Y);
 
   for (let i = 0; i < imgAmount; i++) {
@@ -73,9 +73,9 @@ function setup() {
     gap = 30;
     textSize(10);
   } else {
-    wh = 450;
-    gap = 60;
-    textSize(25);
+    wh = 410;
+    gap = 75;
+    textSize(17);
   }
 
   TILE_W = wh / TILES_X;
@@ -104,6 +104,12 @@ function draw() {
   fill(100, 180, 20);
   text(dates[counter], windowWidth / 2, windowHeight / 2 + wh / 2 + 30);
   console.log(dates[counter]);
+
+  text(
+    "A space for our favourite memories \nin the amazing years together we have had, \nwith room for all the exciting memories in \nyears to come :)",
+    windowWidth / 2,
+    windowHeight + 50
+  );
 
   translate(windowWidth / 2 - wh / 2, windowHeight / 2 - wh / 2);
   translate(TILE_W / 2, TILE_H / 2);
