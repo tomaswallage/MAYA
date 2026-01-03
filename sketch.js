@@ -93,7 +93,7 @@ function draw() {
   pg.image(img[counter], 0, 0);
   pg.pop();
 
-  if (frameCount % 400 == 0) {
+  if (frameCount % 300 == 0) {
     counter = int(random(0, 28));
   }
   // if (counter > 27) {
